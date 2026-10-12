@@ -1,0 +1,15 @@
+{
+  "name": "fastlang-server",
+  "version": "3.0.0",
+  "description": "FastLang site with login (JSON file or MongoDB)",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js"
+  },
+  "engines": {
+    "node": ">=16"
+  },
+  "dependencies": {
+    "mongodb": "^6.8.0"
+  }
+}
