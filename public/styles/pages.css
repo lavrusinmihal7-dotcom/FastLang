@@ -1,0 +1,37 @@
+/* Styles for the added blog / blog_single / contact pages */
+.page_banner{width:100%;padding:190px 0 60px;background:#f8f8f8;text-align:center}
+.page_banner h1{font-size:44px;font-weight:700;color:#232323;margin:0}
+.page_banner ul{list-style:none;padding:0;margin:15px 0 0;display:flex;justify-content:center;gap:18px;font-size:14px;text-transform:uppercase}
+.page_banner a{color:#2e21df}
+.page_section{padding:70px 0}
+.post_card{margin-bottom:40px;box-shadow:0 2px 12px rgba(0,0,0,.08);background:#fff;overflow:hidden;height:calc(100% - 40px)}
+.post_card img{width:100%;height:200px;object-fit:cover;display:block}
+.post_card_body{padding:22px}
+.post_card_body .cat{font-size:12px;text-transform:uppercase;color:#2e21df;font-weight:600}
+.post_card_body h3{font-size:20px;margin:8px 0 10px}
+.post_card_body h3 a{color:#232323}
+.post_card_body p{color:#777;font-size:15px;margin:0}
+.single_post img.hero{width:100%;max-height:420px;object-fit:cover;margin-bottom:30px}
+.single_post h2{font-size:32px;margin-bottom:10px}
+.single_post .meta{color:#999;font-size:14px;margin-bottom:25px}
+.single_post p{color:#555;line-height:1.8;margin-bottom:18px}
+.contact_box{box-shadow:0 2px 12px rgba(0,0,0,.08);padding:35px;background:#fff;height:100%}
+.contact_box h3{margin-bottom:20px}
+.contact_box ul{list-style:none;padding:0;margin:0}
+.contact_box li{margin-bottom:14px;color:#555}
+.contact_form input,.contact_form textarea{width:100%;border:1px solid #ddd;padding:12px 15px;margin-bottom:15px;font-size:15px}
+.contact_form textarea{min-height:150px}
+.contact_form button{background:#2e21df;color:#fff;border:0;padding:13px 32px;font-weight:600;cursor:pointer}
+.contact_form .sent{display:none;color:#2a8a3c;margin-top:12px}
+/* auth pages */
+.auth_box{max-width:460px;margin:0 auto;box-shadow:0 2px 12px rgba(0,0,0,.08);padding:35px;background:#fff}
+.auth_box h3{margin-bottom:22px;text-align:center}
+.auth_box label{display:block;font-size:14px;font-weight:600;margin-bottom:5px}
+.auth_box input{width:100%;border:1px solid #ddd;padding:12px 15px;margin-bottom:16px;font-size:15px}
+.auth_box button{width:100%;background:#2e21df;color:#fff;border:0;padding:13px;font-weight:600;cursor:pointer}
+.auth_box button[disabled]{opacity:.6;cursor:wait}
+.auth_msg{display:none;padding:10px 14px;margin-bottom:16px;font-size:14px;background:#fdecea;color:#b3261e}
+.auth_alt{text-align:center;margin-top:18px;font-size:14px;color:#777}
+.auth_alt a{color:#2e21df}
+.account_row{padding:10px 0;border-bottom:1px solid #eee}
+.account_row span{display:inline-block;width:110px;color:#999}
