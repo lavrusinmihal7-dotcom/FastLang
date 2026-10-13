@@ -1,21 +1,56 @@
-# FastLang server (with login + database)
+# FastLang
+## О проекте
 
-Run locally (saves users to data/users.json, no install needed):
-    node server.js        then open http://localhost:3000
+FastLang - это веб-сервис для изучения иностранных языков, который помогает сделать обучение более удобным и интересным.
 
-Use MongoDB (recommended for hosting):
-1. Create a free cluster at mongodb.com/atlas, add a database user, and under
-   Network Access allow your IP (or 0.0.0.0/0 for a hosted site).
-2. Copy the connection string (mongodb+srv://user:password@cluster.../).
-3. npm install
-4. Set the environment variable MONGODB_URI to that string, then npm start.
-   Windows (PowerShell):  $env:MONGODB_URI="..." ; npm start
-   Mac/Linux:             MONGODB_URI="..." npm start
-   On Render/Railway: add MONGODB_URI under Environment, build "npm install", start "npm start".
-The server prints "Users stored in: MongoDB" when it is connected.
-Users go in database "fastlang" (change with MONGODB_DB), collection "users".
+Идея проекта заключается в том, чтобы объединить практику общения, интерактивные задания и учебные материалы на одной платформе. Мы считаем, что для изучения языка недостаточно только запоминать слова и учить грамматику - важно также регулярно использовать язык на практике.
 
-Pages: /login.html /register.html /account.html (logged-in only)
-API:   POST /api/register, /api/login, /api/logout   GET /api/me
-Sessions are in memory, so everyone is logged out when the server restarts.
-Never commit your MONGODB_URI to GitHub.
+## Основные возможности
+
+- **Поиск языкового партнёра** - возможность найти человека для практики иностранного языка.
+- **Интерактивные задания** - короткие упражнения для развития языковых навыков.
+- **Обратная связь от ИИ** - помощь в обнаружении ошибок и улучшении знаний.
+- **Курсы и учебные материалы** - дополнительные ресурсы для изучения языков.
+
+## Используемые технологии
+
+При разработке проекта использовались следующие технологии:
+
+- HTML - структура страниц сайта.
+- CSS и SCSS - оформление и стилизация интерфейса.
+- JavaScript - интерактивность и функциональность сайта.
+- Дополнительные плагины - расширение возможностей интерфейса.
+- MongoDB - хранение данных.
+
+Серверная часть отвечает за обработку запросов и взаимодействие с базой данных.
+
+## Демо-версия
+
+Проект размещён на платформе Railway и доступен по ссылке:
+https://fastlang-production.up.railway.app/index.html
+
+## Запуск проекта
+
+Для запуска фронтенда локально:
+
+1. Склонируйте репозиторий:
+   ```bash
+   git clone https://github.com/Narn1a/FastLang.git
+   ```
+2. Откройте папку проекта.
+3. Откройте файл `index.html` в браузере.
+
+Для запуска серверной части следуйте инструкциям в папке бэкенда. Перед запуском необходимо настроить переменные окружения и подключение к MongoDB.
+
+## Команда проекта
+
+FastLang - студенческий стартап, разработанный командой из четырёх человек.
+
+- **Лаврушин Михаил** - [backend/frontend разработка].
+- **Ерболат Молдир** - [разработка и оформление страниц сайта].
+- **Базарбекова Аружан** - [роль и вклад в проект].
+- **Арыстан** - [роль и вклад в проект].
+
+## Наша цель
+
+Мы хотим сделать изучение иностранных языков более доступным и практичным, объединив общение, упражнения и учебные материалы в одном сервисе.
